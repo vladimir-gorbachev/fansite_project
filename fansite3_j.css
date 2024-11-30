@@ -1,0 +1,163 @@
+/*  index_home.css
+    --header_title: #fff;    top title color
+    --header_title_2: #fff;  second top title suich as "bienvenue"
+    --header_title_hover: #fff;  color of the top title on hover
+    --header_title_2_hover: #fff;  color of the second top title on hover
+    --header_background: #0f0f0f;  color of header
+    --body_background: #0f0f0f;  color of body with rule set to fixed
+    --burger_icon: #fff;  burger icon color
+    --burger_icon_hover: #fff;  burger icon hovered color / ALSO color when open
+    --burger_title: #fff;   color of top title when in burger (-300width)
+    --burger_fansite_titles: #000;  color of fanpages titles in burger
+    --burger_list_text: #000;  color of pages names in burger (small)
+    --burger_text_hover: #000;  color of hovered titles in burger
+    --footer_background: #0f0f0f;  footer background with gradient
+    --footer_links: #999;  color of footer links
+    --footer_titles: #fff;   color of footer titles
+
+ fansite_home.css
+    --background_interface: #fff;   fanpage home interface background
+    --button_background: #00000029;   XL interface buttons background
+    --button_border: #cfcfcf; top small interface buttons border
+    --button_border_hover: #cfcfcf;   top small interface buttons hovered border
+    --button_text: #000;   color of interface button text (xl and normal)
+    --button_text_hover: #ff0000;    color of interface button hovered
+    --button_nav_background: #00000065;    background of interface buttons
+    --button_nav_background_hover: #00000080;   background of top interface hovered
+    --bio_background: #000;   background of bio section
+    --bio_preground: #fff;   color of bio background (text)
+    --bio_radiant: #ffffffb7;   secondary color of bio background (circular)
+    --bio_glow: #ffffff51;   glow applied to bio background
+    --bio_title_glow: #fff;   glow applied to titles
+    --event_title: #fff;   color of event titles
+    --event_container_background: floralwhite;   background color of events containers
+    --event_container_title: #000;   titles of containers (dates)
+    --event_timeline_arrow: #ff0000;   arrow animated in event timeline
+    --event_container_border: #000;   border and small arrows of timeline
+    --event_gallery_title: #fff;   color of gallery title in events
+    --video_border: #cfcfcf;   border of gallery videos
+    --gallery_background: #0f0f0f;   background of gallery
+    --gallery_image_background: #0f0f0fb3;   background of gallery images (slide)
+*/
+
+:root {
+    --header_background: rgb(5, 8, 7, 1);
+    --body_background: url('fansite3_j/images/body-background.png');
+    --bio_background: rgb(0 0 0 0);
+    --background_interface: linear-gradient(0deg, rgba(5, 8, 7, 0) 0%, rgba(5, 8, 7, 0.5) 2%, rgb(5, 8, 7) 10%, rgb(5, 8, 7) 90%, rgba(5, 8, 7, 0.5) 98%, rgba(5, 8, 7, 0) 100%);
+    --button_text: #fff;
+    --button_border: ;
+    --button_border_hover: #0a7598;
+    --header_title_hover: #0a7598;
+    --header_title_2_hover: #1a9eca;
+    --burger_text_hover: #1a9eca;
+    --button_text_hover: #1a9eca;
+    --burger_icon_hover: #0a7598;
+    --footer_background: rgb(5,8,7);
+    --event_title: #fff;
+    --event_timeline_arrow: #6e3238;
+    --event_container_background: #fee8b7;
+    --event_container_border: #6e3238;
+    --gallery_background: #6e3238;
+}
+
+/* DIFFERENT BACKGROUNDS FOR EACH PAGE */
+#media_body{
+    background: url("images/body_background_1.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#events_body{
+    background: url("images/body_background_15.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact_body{
+    background: url("images/body_background_14.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* KEEP CURRENT FANSITE OPEN IN BURGER MENU */
+#fansite3 :is(.fansite_list){
+    display:flex;
+}
+#fansite3 :is(.open, .close){
+    visibility: hidden;
+}
+#fansite_label3, #fansite_label3 :is(div, h3, img){
+    cursor:default;
+}
+
+/* CUSTOM HOME INTERFACE */
+.interface-home_xl{
+    margin: 30px 0 200px;
+}
+@media only screen and (min-width:870px){
+    .interface-home_xl{
+        margin-top: 90px;
+    }
+}
+
+/* CUSTOM IMAGE FRAME AND BIO SCROLLER */
+.bio{
+    padding-top:0;
+}
+.bio_figure>img{
+    width:350px;
+    height: 385px;
+    border-radius: 62% 38% 68% 32% / 40% 30% 70% 60%;
+    border: 4px solid #0a7498d2;
+}
+.bio_text{
+    padding-bottom: 60px;
+    height: 550px;
+    overflow-y: scroll;
+    padding: 18px 12px 18px 12px;
+}
+.bio_text p{
+    width:100%;
+}
+.bio_text::-webkit-scrollbar {
+    width: 8px;
+}
+.bio_text::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.bio_text::-webkit-scrollbar-thumb {
+    background: #1a9ecad2;
+    border-radius: 10px;
+}
+
+.event_page>h2{
+    line-height:36px;
+    width: 150px;
+    margin-bottom: 15px;
+    background: #6e3238;
+    border-radius: 5px;
+}
+.event-image_header{
+    height: 250px;
+    width:250px;
+}
+.event-gallery_image::-webkit-scrollbar {
+    height: 8px;
+}
+.event-gallery_image::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.event-gallery_image::-webkit-scrollbar-thumb {
+    background: #1a9eca;
+    border-radius: 10px;
+}
+
+/* AUTO DISPLAY FOR MEDIA REDIRECTION */
+#wof:target{
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.795);
+}
+#warriors:target{   
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.795);
+}
