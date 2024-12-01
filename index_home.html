@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Le site d'accueil de la collaboration des AMDligents qui vous apportent
+        trois pages dédiées à des auteures marquantes de la culture populaire : Virginie Despentes, Tui T. Sutherland
+        et Hajine Isayama !">
+        <meta name="author" content="AMDligents">
+        <meta name="keywords" content="accueil, projet, project, school, portfolio, fansites, auteur, biographie, incontournable, société, culture, populaire, oeuvres">
+        <title>AMDligents - Accueil</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="index_home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="index_body">
+        <header id="index_header">
+            <!--BURGER Menu-->
+            <input type="checkbox" id="selectburger">
+            <nav id="menu-burger">
+                <label for="selectburger">                        
+                    <div class="bar bar_top"></div>
+                    <div class="bar bar_middle"></div>
+                    <div class="bar bar_bottom"></div>
+                </label>
+                <ul class="menu-burger_list header_list">
+                    <h3 id="burger_title" class="burger_list_element">AMDligents 🧠</h3>
+                    <li class="burger_list_element"><a href="index_home.html">Accueil</a></li>
+                    <li class="burger_list_element"><a href="index_about-us.html">A propos</a></li>
+                    <input aria-hidden="true" type="checkbox" id="check1">
+                    <li id="fansite1" class="fansite_list_header">
+                        <label aria-hidden="true" for="check1" class="fansite_label burger_list_element">
+                            <div></div>
+                            <h3>Virginie Despentes</h3>
+                            <img src="images/chevron.png" class="open">
+                            <img src="images/chevron.png" class="close">
+                        </label>
+                        <ul class="fansite_list header_list">
+                            <li><a href="fansite1_a/fansite1_a.html">Accueil</a></li>
+                            <li><a href="fansite1_a/media_a.html">Oeuvres</a></li>
+                            <li><a href="fansite1_a/events_a.html">Evénements</a></li>
+                            <li><a href="fansite1_a/contact_a.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <input aria-hidden="true" type="checkbox" id="check2">
+                    <li id="fansite2" class="fansite_list_header">
+                        <label aria-hidden="true" for="check2" class="fansite_label burger_list_element">
+                            <div></div>
+                            <h3>Hajime Isayama</h3>
+                            <img src="images/chevron.png" class="open">
+                            <img src="images/chevron.png" class="close">
+                        </label>
+                        <ul class="fansite_list header_list">
+                            <li><a href="fansite2_v/fansite2_v.html">Accueil</a></li>
+                            <li><a href="fansite2_v/media_v.html">Oeuvres</a></li>
+                            <li><a href="fansite2_v/events_v.html">Evénements</a></li>
+                            <li><a href="fansite2_v/contact_v.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <input aria-hidden="true" type="checkbox" id="check3">
+                    <li id="fansite3" class="fansite_list_header">
+                        <label aria-hidden="true" for="check3" class="fansite_label burger_list_element">
+                            <div></div>
+                            <h3>Tui T. Sutherland</h3>
+                            <img src="images/chevron.png" class="open">
+                            <img src="images/chevron.png" class="close">
+                        </label>
+                        <ul class="fansite_list header_list">
+                            <li><a href="fansite3_j/fansite3_j.html">Accueil</a></li>
+                            <li><a href="fansite3_j/media_j.html">Oeuvres</a></li>
+                            <li><a href="fansite3_j/events_j.html">Evénements</a></li>
+                            <li><a href="fansite3_j/contact_j.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="burger_list_element" id="burger_list_terms"><a href="index_about-us.html#terms">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <!-- TITRE lien et ou retour vers acceuil -->
+            <div id="title">
+                <div></div>
+                <a href=index_home.html>AMDligents 🧠</a>
+                <a href="index_about-us.html" id="index_about">A propos</a>
+            </div>
+            <h2>BIENVENUE</h2>
+        </header>
+
+        <main id="index_main">
+            <nav class="image-menu">
+                <input type="radio" class="image-menu_select" id="select1" name="hover">
+                <figure class="image-menu_figure" id="figure1">
+                    <a href="fansite1_a/fansite1_a.html">
+                        <h3 class="links_text">Projet 1</h3>
+                        <p class="links_text">Fansite dédié à Virginie Despentes, une auteure contemporaine incontournable, célèbre pour son style percutant, ses œuvres engagées et son regard incisif sur notre société.</p>
+                        <adress class="links_text">• Réalisation : Armelle Pouzioux •</adress>
+                    </a>
+                    <label for="select1" class="figure_label">
+                        <img class="label_image" src="images/image-menu_fansite1_a.jpg" id="img1" class="label_image">
+                    </label>
+
+                </figure>
+
+                <input type="radio" class="image-menu_select" id="select2" name="hover">
+                <figure class="image-menu_figure" id="figure2">
+                    <a href="fansite2_v/fansite2_v.html">
+                        <h3 class="links_text">Projet 2</h3>
+                        <p class="links_text">Fansite dédié à Hajime Isayama, le créateur du manga à succès 'L'Attaque des Titans'. 
+                        Découvrez sa biographie, son œuvre et son impact dans le monde du manga.</p>
+                        <adress class="links_text">• Réalisation : Vladimir Gorbachev •</adress>
+                    </a>
+                    <label for="select2" class="figure_label">
+                        <img class="label_image" src="images/image-menu_fansite2_v.webp" class="label_image">
+                    </label>
+                </figure>
+
+                <input type="radio" class="image-menu_select" id="select3" name="hover">
+                <figure class="image-menu_figure" id="figure3">
+                    <a href="fansite3_j/fansite3_j.html">
+                        <h3 class="links_text">Projet 3</h3>
+                        <p class="links_text">Fansite regroupant toutes les informations essentielles sur la carrière de Tui T. Sutherland,
+                        ses livres et ses prochains événements ! Découvrez des aperçus de ses sagas reconnues à l'international, des liens utiles vers
+                        ses réseaux sociaux ainsi qu'un retracement de ses réalisations.</p>
+                        <adress class="links_text">• Réalisation : Jolyne Mangeot •</adress>
+                    </a>
+                    <label for="select3" class="figure_label">
+                        <img class="label_image" src="images/image-menu_fansite3_j.png" id="img3" class="label_image">
+                    </label>
+                </figure>
+            </nav>
+
+        </main>
+        <footer id="index_footer">
+            <hr>
+            <nav>
+                <div id="footer_nav_index">
+                    <a href="index_home.html"><h2>Accueil</h2></a>
+                    <ul>
+                        <li><a href="index_about-us.html">A propos</a></li>
+                        <li><a href="index_about-us.html#terms">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_fansite">
+                    <a href="fansite1_a/fansite1_a.html"><h3>Virginie Despentes</h3></a>
+                    <ul>
+                        <li><a href="fansite1_a/fansite1_a.html#bio">L'auteure</a></li>
+                        <li><a href="fansite1_a/media_a.html">Oeuvres</a></li>
+                        <li><a href="fansite1_a/events_a.html">Événements</a></li>
+                        <li><a href="fansite1_a/contact_a.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_fansite">
+                    <a href="fansite2_v/fansite2_v.html"><h3>Hajime Isayama</h3></a>
+                    <ul>
+                        <li><a href="fansite2_v/fansite2_v.html#bio">L'auteur</a></li>
+                        <li><a href="fansite2_v/media_v.html">Oeuvres</a></li>
+                        <li><a href="fansite2_v/events_v.html">Événements</a></li>
+                        <li><a href="fansite2_v/contact_v.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_fansite">
+                    <a href="fansite3_j/fansite3_j.html"><h3>Tui T.Sutherland</h3></a>
+                    <ul>
+                        <li><a href="fansite3_j/fansite3_j.html#bio">L'auteure</a></li>
+                        <li><a href="fansite3_j/media_j.html">Oeuvres</a></li>
+                        <li><a href="fansite3_j/events_j.html">Événements</a></li>
+                        <li><a href="fansite3_j/contact_j.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <adress>Copyright AMDligents | Conception : Armelle Pouzioux - 
+                Jolyne Mangeot - Vladimir Gorbachev | <span><a href="../index_about-us.html#terms">Mentions légales</a></span>
+            </adress>
+        </footer>
+    
+    </body>
+</html>
