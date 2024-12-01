@@ -1,0 +1,156 @@
+/* *{text-decoration: none;
+color: black;} */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* KEEP CURRENT FANSITE OPEN IN BURGER MENU */
+#fansite2 :is(.fansite_list){
+    display:flex;
+}
+#fansite2 :is(.open, .close){
+    visibility: hidden;
+}
+#fansite_label2, #fansite_label2 :is(div, h3, img){
+    cursor:default;
+}
+/* main>nav{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    text-decoration: none;
+    color: black;
+} */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+title{
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+
+}
+
+.interface-home_xl{
+    padding-bottom: 1rem;
+    box-shadow: none;
+}
+
+.interface-home{
+    align-content: center;
+    box-shadow: none;
+    width: 90%;
+}
+
+.bio{
+    /* background-image: url(../images/1d148-16784975858118-1920.jpg); */
+    background: 
+    linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%),
+        url('../images/1d148-16784975858118-1920.jpg');
+    background-size: cover;
+    background-attachment:scroll;
+    width:100%;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.photohome :is(img){
+    width: 100%;
+    justify-self:center;
+    border-radius: 1rem;
+}
+
+.bio_container{
+    display: flex;
+    flex-flow: wrap column;
+    width: 90%;
+    max-width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    margin: 0 0 0 0;
+    gap: 15px;
+}
+
+.box{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    /* background-color: blue; */
+}
+
+
+#bio_container :is(img){
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 10rem;
+    /* object-fit: cover; */
+}
+
+#bio-content{
+    /* background: rgb(255,255,255); */
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%);
+    padding: 1rem 10px 1rem 10px;
+    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+
+#bio :is(h1, h2, h3, h4, h5, h6){
+    text-align: center;
+}
+
+#bio p{
+    text-align: justify;
+    font-size: calc(8px + 0.7vw);
+    
+    width: 95%;
+    
+}
+
+#bio :is(h2, h3){text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    font-size: calc(12px + 0.9vw);
+    
+}
+
+
+
+@media only screen and (min-width:600px){
+    .bio{
+        flex-flow: wrap row;
+        justify-content: space-around;
+    }
+    .bio_container{
+        display: flex;
+        flex-flow: wrap row;
+        max-width: 100%;
+        /* background-color: red; */
+            
+    }
+    .bio_container{
+        padding-top: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .bio_photo{
+        display: none;
+    }
+    .photohome{
+        margin-top: 1rem;
+    }
+    
+}
