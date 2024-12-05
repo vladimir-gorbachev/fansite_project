@@ -44,7 +44,7 @@
     --header_background: rgb(5, 8, 7, 1);
     --body_background: url('fansite3_j/images/body-background.png');
     --bio_background: rgb(0 0 0 0);
-    --background_interface: linear-gradient(0deg, rgba(5, 8, 7, 0) 0%, rgba(5, 8, 7, 0.5) 2%, rgb(5, 8, 7) 10%, rgb(5, 8, 7) 90%, rgba(5, 8, 7, 0.5) 98%, rgba(5, 8, 7, 0) 100%);
+    --background_interface: linear-gradient(0deg, rgba(6, 11, 15, 0) 0%, rgba(6, 11, 15, 0.5) 2%, rgb(6, 11, 15) 10%, rgb(6, 11, 15) 90%, rgba(6, 11, 15, 0.5) 98%, rgba(6, 11, 15, 0) 100%);
     --button_text: #fff;
     --button_border: ;
     --button_border_hover: #0a7598;
@@ -63,18 +63,18 @@
 
 /* DIFFERENT BACKGROUNDS FOR EACH PAGE */
 #media_body{
-    background: url("images/body_background_1.webp");
+    background: url("images/body_background_1.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 #events_body{
-    background: url("images/body_background_15.jpg");
+    background: url("images/body_background_13.png");
     background-size: cover;
     background-attachment: fixed;
 }
 #contact_body{
-    background: url("images/body_background_14.webp");
+    background: url("images/body_background_14.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -148,7 +148,7 @@
     border-radius: 10px;
 }
 .event-gallery_image::-webkit-scrollbar-thumb {
-    background: #1a9eca;
+    background: #fee8b7;
     border-radius: 10px;
 }
 
