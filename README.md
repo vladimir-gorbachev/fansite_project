@@ -8,6 +8,9 @@ du projet doit créer plusieurs pages HTML utilisant le même fichier CSS
 nommé fansite1.css, fansite2.css et fansite3.css (un fichier par personne).
 
 ---
+🔑 Visualiser le projet dans le [domaine web github](https://vladimir-gorbachev.github.io/fansite_project/index_home.html)
+
+---
 <u>Compétences acquises :</u>
 - 🛡️**Pages web en HTML5 et CSS** : Création de pages statiques avec des balises HTML5 et du CSS pour la mise en forme.
 - 📱**Design Responsive & Adaptive** : Implémentation d'un design flexible et adapté à tous types d'écrans grâce aux media queries et display flex.
