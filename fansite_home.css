@@ -481,6 +481,14 @@
         display:block;
     }
 
+    /* MEDIA */
+    .image{
+        width: 275px;
+        aspect-ratio: 5/8;
+    }
+    .description{
+        font-size: 13px;
+    }
     /* TIMELINE */
     .event_page>h2, .event-gallery>h2{
         font-size: 24px;

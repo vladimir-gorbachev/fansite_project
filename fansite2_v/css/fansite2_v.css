@@ -29,7 +29,7 @@
     --bio_radiant: #ffffffb7;   secondary color of bio background (circular)
     --bio_glow: #ffffff51;   glow applied to bio background
     --bio_title_glow: #fff;   glow applied to titles
-    --event_title: #fff;   color of event title
+    --event_title: #fff;   color of event titles
     --event_container_background: floralwhite;   background color of events containers
     --event_container_title: #000;   titles of containers (dates)
     --event_timeline_arrow: #ff0000;   arrow animated in event timeline
@@ -39,20 +39,29 @@
     --gallery_background: #0f0f0f;   background of gallery
     --gallery_image_background: #0f0f0fb3;   background of gallery images (slide)
 */
-
 :root{
-    --body_background: #fff;
-    --button_text_hover: #ff0000;
-    --header_title_hover: #ff0000;
-    --header_title_2_hover: #fff;
-    --burger_icon_hover: #ff0000;
-    --burger_text_hover: #ff0000;
-    --bio_background: rgb(0,0,0,0);
+    --bio_background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%), url('fansite2_v/images/1d148-16784975858118-1920.jpg');
+    --header_title_hover: red;
+    --header_title_2_hover: red;
+    --burger_icon_hover: red;
+    --burger_text_hover: red;
+    --button_border_hover: red;
+    --button_text_hover: red;
+}
+main{
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#snk_icon{
+    max-width: 200px;
 }
 
 /* DIFFERENT BACKGROUNDS FOR EACH PAGE */
 #home_body{
-    background: url("../fansite1_a/images_a/Z6KFPZV2N5G5TKP4AGZISHPKL4.avif");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -70,35 +79,37 @@
 }
 
 /* KEEP CURRENT FANSITE OPEN IN BURGER MENU */
-#fansite1 :is(.fansite_list){
+#fansite2 :is(.fansite_list){
     display:flex;
 }
-#fansite1 :is(.open, .close){
+#fansite2 :is(.open, .close){
     visibility: hidden;
 }
-#fansite_label1, #fansite_label1 :is(div, h3, img){
+#fansite_label2, #fansite_label2 :is(div, h3, img){
     cursor:default;
 }
 
-/* AUTO DISPLAY FOR MEDIA REDIRECTION */
-#baisemoi:target{
-    opacity: 1;
-    background-color: rgba(255, 0, 0, 0.795);
+/* CUSTOM HOMEPAGE WIDTH AND PLACEMENT */
+#title{
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }
-#jolieschoses:target{
-    opacity: 1;
-    background-color: rgba(255, 0, 0, 0.795);
+.interface-home_xl{
+    padding-bottom: 1rem;
+    box-shadow: none;
 }
-#teen:target{
-    opacity: 1;
-    background-color: rgba(255, 0, 0, 0.795);
-}
-#vernon:target{
-    opacity: 1;
-    background-color: rgba(255, 0, 0, 0.795);
+.interface-home{
+    align-content: center;
+    box-shadow: none;
+    width: 90%;
 }
 
-/* CUSTOM SETTINGS */
-.event-image_header>img{
-    max-width: 600px;
+
+/* AUTO DISPLAY FOR MEDIA REDIRECTION */
+#snk_anime:target{
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.795);
+}
+#snk_manga:target{
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.795);
 }
