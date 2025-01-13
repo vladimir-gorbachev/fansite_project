@@ -21,4 +21,4 @@ nommé fansite1.css, fansite2.css et fansite3.css (un fichier par personne).
 Participation :
 - [*Armelle Pouzioux*](https://github.com/armelle-pouzioux)
 - [*Vladimir Gorbachev*](https://github.com/vladimir-gorbachev)
-- [*Jolyne Mangeot*](https://github.com/joseph-mangeot)
+- [*Jolyne Mangeot*](https://github.com/jolyne-mangeot)
