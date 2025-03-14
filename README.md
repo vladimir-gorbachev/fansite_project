@@ -1,5 +1,5 @@
 # Fansite-Project
-![Bannière readme](readme_banner.png)
+![Bannière readme](docs/images/readme_banner.png)
 *Développez un site web fan de vos célébrités favorites*
 
 Vous devez développer un site web de fans regroupant vos célébrités,
@@ -8,7 +8,7 @@ du projet doit créer plusieurs pages HTML utilisant le même fichier CSS
 nommé fansite1.css, fansite2.css et fansite3.css (un fichier par personne).
 
 ---
-🔑 Visualiser le projet dans le [domaine web github](https://vladimir-gorbachev.github.io/fansite_project/index_home.html)
+🔑 Visualiser le projet dans le [domaine web github](https://vladimir-gorbachev.github.io/fansite_project/)
 
 ---
 <u>Compétences acquises :</u>
